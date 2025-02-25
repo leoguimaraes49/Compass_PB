@@ -1,8 +1,6 @@
-## Apresentação
+# Olá, eu sou **Leonardo Guimarães Oliveira**! 👋
 
-Olá, eu sou **Leonardo Guimarães Oliveira**! 👋
 ![Minha Foto](foto_perfil.jpg)
-
 
 ## Sobre mim  
 - 📍 **Localização:** Lavras, Minas Gerais, Brasil  
