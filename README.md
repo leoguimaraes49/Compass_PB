@@ -1,8 +1,8 @@
 # Olá, eu sou **Leonardo Guimarães Oliveira**! 👋
 
-![Minha Foto](foto_perfil.jpg)
+## Sobre mim 
 
-## Sobre mim  
+![Minha Foto](foto_perfil.jpg) 
 - 📍 **Localização:** Lavras, Minas Gerais, Brasil  
 - 🎓 **Instituição de Ensino:** Universidade Federal de Lavras  
 - 💻 **Curso:** Sistemas de Informação  
