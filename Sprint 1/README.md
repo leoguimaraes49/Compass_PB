@@ -56,58 +56,56 @@ Os arquivos exportados foram gerados conforme as especificações e estão dispo
 Abaixo estão as evidências da execução dos exercícios. Cada imagem contém o resultado obtido após rodar as queries no banco de dados. Os prints comprovam que os valores retornados estão corretos e alinhados com os enunciados.  
 
 📌 **E01 - Listar todos os livros publicados após 2014**  
-![Evidência E01](evidencias/Evidencias-Exercicios/E01.png)  
+![Evidência E01](Evidencias/Evidencias-Exercicios/E01.png)  
 
 📌 **E02 - Listar os 10 livros mais caros**  
-![Evidência E02](evidencias/Evidencias-Exercicios/E02.png)  
+![Evidência E02](Evidencias/Evidencias-Exercicios/E02.png)  
 
 📌 **E03 - Listar as 5 editoras com mais livros na biblioteca**  
-![Evidência E03](evidencias/Evidencias-Exercicios/E03.png)  
+![Evidência E03](Evidencias/Evidencias-Exercicios/E03.png)  
 
 📌 **E04 - Quantidade de livros publicados por cada autor**  
-![Evidência E04](evidencias/Evidencias-Exercicios/E04.png)  
+![Evidência E04](Evidencias/Evidencias-Exercicios/E04.png)  
 
 📌 **E05 - Autores que publicaram fora da região Sul do Brasil**  
-![Evidência E05](evidencias/Evidencias-Exercicios/E05.png)  
+![Evidência E05](Evidencias/Evidencias-Exercicios/E05.png)  
 
 📌 **E06 - Autor com maior número de livros publicados**  
-![Evidência E06](evidencias/Evidencias-Exercicios/E06.png)  
+![Evidência E06](Evidencias/Evidencias-Exercicios/E06.png)  
 
 📌 **E07 - Autores sem nenhuma publicação**  
-![Evidência E07](evidencias/Evidencias-Exercicios/E07.png)  
+![Evidência E07](Evidencias/Evidencias-Exercicios/E07.png)  
 
 📌 **E08 - Vendedor com maior número de vendas concluídas**  
-![Evidência E08](evidencias/Evidencias-Exercicios/E08.png)  
+![Evidência E08](Evidencias/Evidencias-Exercicios/E08.png)  
 
 📌 **E09 - Produto mais vendido entre 2014-02-03 e 2018-02-02**  
-![Evidência E09](evidencias/Evidencias-Exercicios/E09.png)  
+![Evidência E09](Evidencias/Evidencias-Exercicios/E09.png)  
 
 📌 **E10 - Cálculo da comissão dos vendedores**  
-![Evidência E10](evidencias/Evidencias-Exercicios/E10.png)  
+![Evidência E10](Evidencias/Evidencias-Exercicios/E10.png)  
 
 📌 **E11 - Cliente com maior gasto na loja**  
-![Evidência E11](evidencias/Evidencias-Exercicios/E11.png)  
+![Evidência E11](Evidencias/Evidencias-Exercicios/E11.png)  
 
 📌 **E12 - Dependentes do vendedor com menor valor bruto de vendas**  
-![Evidência E12](evidencias/Evidencias-Exercicios/E12.png)  
+![Evidência E12](Evidencias/Evidencias-Exercicios/E12.png)  
 
 📌 **E13 - Os 10 produtos menos vendidos pelos canais E-Commerce ou Matriz**  
-![Evidência E13](evidencias/Evidencias-Exercicios/E13.png)  
+![Evidência E13](Evidencias/Evidencias-Exercicios/E13.png)  
 
 📌 **E14 - Gasto médio por estado da federação**  
-![Evidência E14](evidencias/Evidencias-Exercicios/E14.png)  
+![Evidência E14](Evidencias/Evidencias-Exercicios/E14.png)  
 
 📌 **E15 - Listar códigos das vendas deletadas**  
-![Evidência E15](evidencias/Evidencias-Exercicios/E15.png)  
+![Evidência E15](Evidencias/Evidencias-Exercicios/E15.png)  
 
 📌 **E16 - Quantidade média vendida de cada produto por estado**  
-![Evidência E16](evidencias/Evidencias-Exercicios/E16.png)  
+![Evidência E16](Evidencias/Evidencias-Exercicios/E16.png)  
 
 Essas evidências demonstram que as queries foram executadas corretamente e que os resultados correspondem ao esperado.  
 
 ---
-
-
 
 # Certificados
 
