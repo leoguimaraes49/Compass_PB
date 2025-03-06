@@ -26,7 +26,7 @@ Os exercícios foram divididos em **Exercícios I** e **Exercícios II**, organi
 Cada arquivo contém todas as queries com seus respectivos **enunciados comentados dentro do código**.
 
 📌 **Exercícios I**  
-👉 [Acessar Arquivo SQL](exercicios/exercicios_I.sql)  
+👉 [Acessar Arquivo SQL](Exercicios/exercicios_I.sql)  
 
 
 📌 **Exercícios II - Exportação de Dados**   

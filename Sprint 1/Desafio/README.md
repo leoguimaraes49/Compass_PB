@@ -448,7 +448,7 @@ Com isso, o **modelo dimensional** está completamente estruturado, garantindo u
 🔹 **A Dimensão Tempo foi integrada corretamente para análises temporais.**  
 🔹 **O tipo de combustível foi incorporado na DimCarro, respeitando o Esquema Estrela.**  
 
-✅ **Finalizo assim o processo de normalização da `tb_locacao`**, garantindo **1NF, 2NF e 3NF**, e a transformação em um **Modelo Dimensional funcional via Views**.   
+**Finalizo assim o processo de normalização da `tb_locacao`**, garantindo **1NF, 2NF e 3NF**, e a transformação em um **Modelo Dimensional funcional via Views**.   
 
  
 
