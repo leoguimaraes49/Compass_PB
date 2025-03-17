@@ -31,7 +31,7 @@ Os exercícios foram organizados nas pastas abaixo, contendos os arquivos que se
 👉 [Acessar Pasta](Exercicios/Parte_4_ETL)  
 
 # Desafio
-👉 [Acessar Pasta](Desafio/etapa-1) 
+👉 [Acessar Pasta](Desafio/) 
 
 Os arquivos foram organizados de forma a facilitar a navegação e a compreensão dos exercícios e do desafio resolvido.  
 
