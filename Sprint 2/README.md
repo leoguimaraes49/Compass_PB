@@ -134,18 +134,23 @@ Cada etapa gerou resultados salvos em arquivos `.txt` específicos (etapa-1.txt 
 📌 **Evidências ETL**
 
 📌 **Etapa 1 - Ator/Atriz com maior número de filmes**
-👉![Evidência Etapa 1](Evidencias/Evidencias-Exercicios/etl01.png)  
+
+👉 ![Evidência Etapa 1](Evidencias/Evidencias-Exercicios/etl01.png)  
 
 📌 **Etapa 2 - Média da receita de bilheteria bruta dos principais filmes**  
+
 👉 ![Evidência E02](Evidencias/Evidencias-Exercicios/etl02.png)
 
 📌 **E03 - Ator/Atriz com a maior média de receita de bilheteria bruta**  
+
 👉 ![Evidência E03](Evidencias/Evidencias-Exercicios/etl03.png)
 
 📌 **E04 - Contagem de aparições dos filmes mais recorrentes no dataset**  
+
 👉 ![Evidência E04](Evidencias/Evidencias-Exercicios/etl04.png)
 
 📌 **E05 - Lista dos atores ordenada pela receita bruta total dos filmes**  
+
 👉 ![Evidência E05](Evidencias/Evidencias-Exercicios/etl05.png)
 
 ---
