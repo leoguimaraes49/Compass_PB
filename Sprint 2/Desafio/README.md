@@ -231,19 +231,26 @@ print("Preço:", app_mais_caro['Price'])
 
 ## Etapa 6 – Contagem de Apps "Mature 17+"
 
-**Objetivo:** Filtrar apps com classificação específica.  
+**Objetivo:**  
+Identificar quantos aplicativos únicos possuem classificação de conteúdo "Mature 17+".
+
 **Decisões:**  
-- Usei `str.strip()` para evitar erros por espaços em branco.  
-- Filtrei a coluna `Content Rating` para valores exatamente iguais a "Mature 17+".  
-- `len()` retorna a contagem exata de apps filtrados.
+- Filtrei a coluna `Content Rating` para selecionar apenas aplicativos classificados exatamente como `"Mature 17+"`.
+- Removi duplicatas com base no nome do aplicativo usando `drop_duplicates(subset='App')`, garantindo a contagem apenas de apps únicos.
+- Calculei a quantidade final usando `.shape[0]`, método recomendado e claro para obter o número total de registros filtrados.
 
 **Código:**
 ```python
-mature_apps = df[
-    (df['Content Rating'].notna()) & 
-    (df['Content Rating'].str.strip() == 'Mature 17+')
-]
-print(f"Quantidade de apps classificados como 'Mature 17+': {len(mature_apps)}")
+# Filtrar os apps classificados como "Mature 17+"
+apps_mature = df[df['Content Rating'] == 'Mature 17+']
+
+# Remover apps duplicados pelo nome (considerando apenas apps únicos)
+apps_mature_unicos = apps_mature.drop_duplicates(subset='App')
+
+# Contar a quantidade de apps únicos classificados como Mature 17+
+quantidade_mature = apps_mature_unicos.shape[0]
+
+print(f"Quantidade de apps únicos classificados como 'Mature 17+': {quantidade_mature}")
 ```
 
 **Evidência:**  
