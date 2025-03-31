@@ -113,7 +113,7 @@ df.to_csv('/app/data/csv_limpo.csv', index=False, float_format='%.1f', encoding=
 
 ---
 
-## ✅ Etapa 2 – Análise e Respostas (Q1–Q3)
+## ✅ Etapa 2 – Análise e Respostas 
 
 🔗 **Código completo disponível em:** [job.py](../Desafio/analysis/job.py)
 
@@ -131,24 +131,57 @@ A análise visa responder perguntas sobre artistas, faturamento e turnês de man
 df["Per Show Adjusted"] = df["Adjusted gross (in 2022 dollars)"] / df["Shows"]
 ```
 
-**Q1 – Artista mais frequente com maior média:**
+### ✅ Q1 – Enunciado:
+
+> **Qual é a artista que mais aparece nessa lista e possui a maior média de seu faturamento bruto (Actual gross)?**
+
+#### 💡 Como resolvi:
+
+Utilizei o `groupby` para agrupar os dados por artista, contei quantas vezes cada artista apareceu na lista e calculei a média de faturamento bruto (`Actual gross`). Em seguida, ordenei pela quantidade de aparições e, em caso de empate, pela média de faturamento.
+
 ```python
-artist_stats = df.groupby("Artist").agg(Appearances=("Rank", "count"), Avg_Actual_Gross=("Actual gross", "mean"))
-q1 = artist_stats.sort_values(["Appearances", "Avg_Actual_Gross"], ascending=[False, False]).iloc[0]
+artist_stats = df.groupby("Artist").agg(
+    Appearances=("Rank", "count"),
+    Avg_Actual_Gross=("Actual gross", "mean")
+).reset_index()
+
+q1 = artist_stats.sort_values(
+    ["Appearances", "Avg_Actual_Gross"], ascending=[False, False]
+).iloc[0]
 ```
 
-**Q2 – Maior média em turnê de 1 ano:**
+---
+
+### ✅ Q2 – Enunciado:
+
+> **Das turnês que aconteceram em um ano, apresente a turnê com a maior média de faturamento bruto (Average gross).**
+
+#### 💡 Como resolvi:
+
+Filtrei as turnês cujo `Start year` é igual ao `End year`, indicando que ocorreram em apenas um ano. Depois, selecionei a que possui o maior valor em `Average gross`.
+
 ```python
 single_year = df[df["Start year"] == df["End year"]]
 q2 = single_year.loc[single_year["Average gross"].idxmax()]
 ```
 
-**Q3 – Top 3 mais lucrativas por show:**
+---
+
+### ✅ Q3 – Enunciado:
+
+> **Quais são as 3 artistas que possuem o show (unitário) mais lucrativo, dentro de uma turnê? Cite também o nome dessas turnês para cada artista. Utilize a coluna “Adjusted gross (in 2022 dollars)”. Caso necessário, crie uma coluna nova para essa conta.**
+
+#### 💡 Como resolvi:
+
+Criei uma nova coluna `Per Show Adjusted`, que divide o faturamento ajustado pelo número de shows. Em seguida, ordenei o DataFrame por essa coluna em ordem decrescente e selecionei os três primeiros resultados.
+
 ```python
+df["Per Show Adjusted"] = df["Adjusted gross (in 2022 dollars)"] / df["Shows"]
 q3 = df.sort_values("Per Show Adjusted", ascending=False).head(3)
 ```
 
-**📸 Evidência:**   
+**📸 Evidência com as respostas:**   
+
 ![Evidencia 02](../Evidencias/e02.png)
 
 ---
@@ -168,14 +201,21 @@ Os gráficos ajudam a comunicar insights visuais com clareza e impacto.
 ### 🧠 Como foi feito – Exemplo Q4 e Q5:
 
 **Q4 – Evolução do faturamento (gráfico de linha):**
+#### 💡 Como resolvi:
+Filtrei os dados apenas para a artista que mais aparece na lista e agrupei por `Start year`. Em seguida, criei um gráfico de linha utilizando o Seaborn, relacionando os anos com os valores de faturamento (`Actual gross`).
 ```python
 artist_data = df[df["Artist"] == q1["Artist"]]
 sns.lineplot(x="Start year", y="Actual gross", data=artist_data, marker="o")
 plt.title("Evolução do Faturamento")
 plt.savefig("/app/data/Q4.png")
 ```
+**📸 Evidência:** 
+![Evidencia 03](../Evidencias/Q4.png)
 
 **Q5 – Top 5 artistas com mais shows (gráfico de barras):**
+#### 💡 Como resolvi:
+Agrupei os dados por artista, somei o total de shows de cada uma, selecionei as cinco com maiores valores e gerei um gráfico de barras utilizando o Seaborn.
+
 ```python
 top_artists = df.groupby("Artist")["Shows"].sum().nlargest(5).reset_index()
 sns.barplot(x="Artist", y="Shows", data=top_artists)
@@ -191,7 +231,7 @@ plt.title("Evolução do Faturamento")
 plt.savefig("/app/data/Q4.png")
 ```
 **📸 Evidência:** 
-![Evidencia 03](../Evidencias/Q4.png)
+
 ![Evidencia 04](../Evidencias/Q5.png)
 
 
