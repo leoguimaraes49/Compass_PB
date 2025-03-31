@@ -9,8 +9,6 @@
 
 ---
 
-# Exercícios
-
 ## 1. Desafio da Sprint – Concert Tours
 
 O desafio consistiu em aplicar todo o fluxo de ETL + Análise + Visualização, utilizando Python, Pandas, Matplotlib, Seaborn e Docker. 
@@ -99,16 +97,16 @@ docker run -it mascarar-dados
 
 ## Exercício – Evidências
 
-### Build `carguru`
+#### Build `carguru`
 ![Build carguru](Evidencias/Evidencias-exercicio/Ev01.png)
 
-### Execução do container `carguru`
+#### Execução do container `carguru`
 ![Execução carguru](Evidencias/Evidencias-exercicio/Ev02.png)
 
-### Build `mascarar`
+#### Build `mascarar`
 ![Build mascarar](Evidencias/Evidencias-exercicio/Ev03.png)
 
-### Execução do container interativo `mascarar`
+#### Execução do container interativo `mascarar`
 ![Execução mascarar](Evidencias/Evidencias-exercicio/Ev04.png)
 
 ---
