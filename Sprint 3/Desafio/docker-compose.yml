@@ -1,0 +1,12 @@
+services:
+  etl:
+    build: ./etl
+    volumes:
+      - ./volume:/app/data  # Mapeia para um SUBDIRETÓRIO
+
+  analysis:
+    build: ./analysis
+    volumes:
+      - ./volume:/app/data  # Mapeia para o mesmo subdiretório
+    depends_on:
+      - etl
