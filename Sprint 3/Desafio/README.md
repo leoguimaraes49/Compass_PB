@@ -27,7 +27,7 @@ Instaladas via `pip` dentro de cada container no Dockerfile.
 ## 📂 Estrutura do Projeto
 
 ```
-projeto/
+Desafio/
 ├── analysis/
 │   ├── job.py
 │   └── Dockerfile
@@ -131,7 +131,7 @@ A análise visa responder perguntas sobre artistas, faturamento e turnês de man
 df["Per Show Adjusted"] = df["Adjusted gross (in 2022 dollars)"] / df["Shows"]
 ```
 
-### ✅ Q1 – Enunciado:
+###  Q1 – Enunciado:
 
 > **Qual é a artista que mais aparece nessa lista e possui a maior média de seu faturamento bruto (Actual gross)?**
 
@@ -152,7 +152,7 @@ q1 = artist_stats.sort_values(
 
 ---
 
-### ✅ Q2 – Enunciado:
+###  Q2 – Enunciado:
 
 > **Das turnês que aconteceram em um ano, apresente a turnê com a maior média de faturamento bruto (Average gross).**
 
@@ -167,7 +167,7 @@ q2 = single_year.loc[single_year["Average gross"].idxmax()]
 
 ---
 
-### ✅ Q3 – Enunciado:
+###  Q3 – Enunciado:
 
 > **Quais são as 3 artistas que possuem o show (unitário) mais lucrativo, dentro de uma turnê? Cite também o nome dessas turnês para cada artista. Utilize a coluna “Adjusted gross (in 2022 dollars)”. Caso necessário, crie uma coluna nova para essa conta.**
 
@@ -330,7 +330,9 @@ Todo o fluxo é automatizado: basta um único comando para realizar a cadeia com
 
 
 **📸 Evidência:** 
+
 ![Evidencia 05](../Evidencias/e05.png)
+
 ![Evidencia 06](../Evidencias/e06.png)
 
 **Arquivos gerados:**
