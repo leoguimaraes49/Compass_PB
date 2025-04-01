@@ -200,7 +200,7 @@ Os gráficos ajudam a comunicar insights visuais com clareza e impacto.
 
 ### 🧠 Como foi feito – Exemplo Q4 e Q5:
 
-**Q4 – Evolução do faturamento (gráfico de linha):**
+###  Q4: Evolução do faturamento (gráfico de linha):
 #### 💡 Como resolvi:
 Filtrei os dados apenas para a artista que mais aparece na lista e agrupei por `Start year`. Em seguida, criei um gráfico de linha utilizando o Seaborn, relacionando os anos com os valores de faturamento (`Actual gross`).
 ```python
@@ -212,7 +212,7 @@ plt.savefig("/app/data/Q4.png")
 **📸 Evidência:** 
 ![Evidencia 03](../Evidencias/Q4.png)
 
-**Q5 – Top 5 artistas com mais shows (gráfico de barras):**
+### Q5 – Top 5 artistas com mais shows (gráfico de barras):
 #### 💡 Como resolvi:
 Agrupei os dados por artista, somei o total de shows de cada uma, selecionei as cinco com maiores valores e gerei um gráfico de barras utilizando o Seaborn.
 
