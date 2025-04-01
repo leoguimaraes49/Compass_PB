@@ -2,18 +2,16 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# =============================================
+
 # CONFIGURAÇÕES GERAIS
-# =============================================
 sns.set_theme(style="darkgrid")
 plt.rcParams["font.family"] = "DejaVu Sans"
 plt.rcParams["axes.titlesize"] = 16
 plt.rcParams["axes.labelsize"] = 12
 COLOR_PALETTE = sns.color_palette("viridis")
 
-# =============================================
+
 # FUNÇÃO DE PROCESSAMENTO DE DADOS
-# =============================================
 def process_data(csv_path):
     """Carrega e prepara os dados"""
     df = pd.read_csv(csv_path)
@@ -29,9 +27,8 @@ def process_data(csv_path):
     
     return df
 
-# =============================================
+
 # RESPOSTAS DAS QUESTÕES (Q1-Q3)
-# =============================================
 def answer_questions(df):
     """Responde às questões analíticas"""
     # Q1 - Artista mais frequente com maior média
@@ -50,11 +47,10 @@ def answer_questions(df):
     
     return q1, q2, q3
 
-# =============================================
+
 # GERAÇÃO DE GRÁFICOS (Q4-Q5)
-# =============================================
 def generate_visualizations(df, top_artist):
-    """Gera visualizações profissionais"""
+    """Gera visualizações"""
     # --------------- Q4 (Gráfico de Linhas) ---------------
     plt.figure(figsize=(12, 6))
     artist_data = df[df["Artist"] == top_artist].sort_values("Start year")
@@ -131,11 +127,8 @@ def generate_visualizations(df, top_artist):
     plt.savefig("/app/data/Q5.png", dpi=300, bbox_inches="tight")
     plt.close()
 
-# =============================================
 # SALVAMENTO DAS RESPOSTAS
-# =============================================
 def save_answers(q1, q2, q3):
-    """Salva as respostas em formato texto"""
     with open("/app/data/respostas.txt", "w", encoding="utf-8") as f:
         f.write(f"Q1:\n--- {q1['Artist']} (Aparições: {q1['Appearances']}, ")
         f.write(f"Média: ${q1['Avg_Actual_Gross']/1e6:,.1f}M\n\n")
@@ -148,9 +141,7 @@ def save_answers(q1, q2, q3):
             f.write(f"--- {row['Artist']}: {row['Tour title']} ")
             f.write(f"(USD ${row['Per Show Adjusted']/1e6:,.1f}M/show)\n")
 
-# =============================================
 # EXECUÇÃO PRINCIPAL
-# =============================================
 if __name__ == "__main__":
     print("🚀 Iniciando processamento...")
     try:
