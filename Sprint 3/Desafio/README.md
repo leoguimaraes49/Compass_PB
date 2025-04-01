@@ -5,7 +5,7 @@
 Este projeto apresenta minha solução completa e detalhada para o **desafio da Sprint 3**, utilizando Python, Pandas, Matplotlib, Seaborn e Docker. O processo incluiu:
 - Limpeza e preparação dos dados (ETL);
 - Análise exploratória com respostas explicadas;
-- Visualizações gráficas profissionais;
+- Visualizações gráficas;
 - Containerização com Docker.
 
 ---
