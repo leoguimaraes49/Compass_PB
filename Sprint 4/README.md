@@ -85,7 +85,7 @@ Durante o período da sprint, também obtive/avancei em algumas certificações 
 1. **Cloud Quest:** 
  [Link Badge](Certificados/badge.txt)
 2. **AWS Skill Builder - AWS Partner: Sales Accreditation (Business) (Portuguese)**  
-   [Certificado](Certificados/AWS-Course-Completion-Certificate.png)
+   [Certificado](Certificados/AWS-Course-Completion-Certificate.pdf)
 3. **AWS Partner: Economias na nuvem AWS**:
    [Certificado](Certificados/CloudEconomics.pdf)
 
