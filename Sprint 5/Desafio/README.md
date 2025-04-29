@@ -326,11 +326,32 @@ for %%F in ("batches\ids_*.json") do (
 
 ## ✅ Requisitos Atendidos
 
-- Σ **CSV original não foi alterado** em nenhuma etapa.  
-- Σ **JSONs complementares** trazem apenas campos novos (sem repetir colunas do CSV).  
-- Σ **Agrupamento** de até 100 registros por arquivo JSON.  
-- Σ **Arquivos JSON < 10 MB** (limite de Lambda).  
-- Σ **Automação** via Docker (etapa 1) e AWS Lambda (etapa 2).  
+- **CSV original não foi alterado** em nenhuma etapa.  
+- **JSONs complementares** trazem apenas campos novos (sem repetir colunas do CSV).  
+- **Agrupamento** de até 100 registros por arquivo JSON.  
+- **Arquivos JSON < 10 MB** (limite de Lambda).  
+- **Automação** via Docker (etapa 1) e AWS Lambda (etapa 2).  
 
+> ## Observação sobre Credenciais  
+>  
+> Para seguir **boas práticas de segurança**, **não** há nenhum acesso ou chave armazenada diretamente no código.  
+>  
+> - **AWS CLI Profile:**  
+>   - Configurei meu perfil com  
+>     ```bash
+>     aws configure --profile 727646512307_AdministratorAccess
+>     ```  
+>   - Em seguida, exportei no terminal:  
+>     ```bash
+>     export AWS_PROFILE=727646512307_AdministratorAccess
+>     ```  
+> - **Variáveis de ambiente:**  
+>   - `TMDB_API_KEY` foi definida via  
+>     ```bash
+>     export TMDB_API_KEY="sua_chave_aqui"
+>     ```  
+>   - `DL_BUCKET` (nome do S3) e `AWS_REGION` também são configurados via ambiente ou CLI, nunca hardcoded.  
+>  
+> Assim, todo o acesso ao S3 e à API é feito de forma segura, mantendo credenciais separadas do repositório.
 ---
 
