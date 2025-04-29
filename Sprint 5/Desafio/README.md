@@ -39,7 +39,7 @@ Desafio/
 │   ├── ingest_csv.py
 ├── etapa2/
 │   ├── lambda_tmdb.py
-│    ├── split_ids.py
+│   ├── split_ids.py
 └── README.md
 ```
 
