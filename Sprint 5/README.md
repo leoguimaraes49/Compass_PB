@@ -99,10 +99,14 @@ display(df)
 
 ## 2. Evidências
 
-1. 📸![Evidência 01](./Evidencias/Evidencias-Exercicios/e1.png) – Saída do Spark com top 20 palavras.
+1. 📸![Evidência 01](./Evidencias/Evidencias-Exercicios/e1.png) – Exercício 1
+
 2. 📸![Evidência 02](./Evidencias/Evidencias-Exercicios/e2.png) – Exercício 1
+
 3. 📸![Evidência 03](./Evidencias/Evidencias-Exercicios/e3.png) – Exercício 1
+
 4. 📸![Evidência 04](./Evidencias/Evidencias-Exercicios/e5.png) – Exercício 2
+
 5. 📸![Evidência 05](./Evidencias/Evidencias-Exercicios/e4.png) – Exercício 2
 
 
