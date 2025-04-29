@@ -124,12 +124,12 @@ Nesta sprint, consolidei:
 
 ## 4. Certificados
 
-1. **Fundamentals of Analystics on AWS - Part 1** 
- [Certificado](Certificados/c1.png)
-2. **Introduction to Amazon Athena**  
-  [Certificado](Certificados/c2.png)
-3. **Serverless Analytics**:
-   [Certificado](Certificados/c3.png)
+1. **Fundamentals of Analystics on AWS-Part 1:** 
+ ![Certificado](Certificados/c1.png)
+2. **Introduction to Amazon Athena:**  
+  ![Certificado](Certificados/c2.png)
+3. **Serverless Analytics:**
+   ![Certificado](Certificados/c3.png)
 
 
 

@@ -291,8 +291,48 @@ def lambda_handler(event, _context):
 ![Evidência function](../Evidencias/e07.png)  
 
 ### 💻 Invocação via AWS CLI
+### Geração de lotes JSON de IMDb IDs de filmes de guerra
 
+Usei este script para extrair do `movies.csv` apenas os filmes cujo gênero contém “War” e gerar lotes de até 100 IMDb IDs em arquivos JSON na pasta `batches/`. Esses arquivos servem de input para a função Lambda, que complementa cada ID com os novos campos (overview, budget, revenue, poster_path, cast, directors, created_at) e escreve os JSONs enriquecidos no bucket S3, sem repetir dados já presentes no CSV.
 
+```python
+# discover_war_ids.py
+import os, math, json, pandas as pd
+
+CSV_PATH = "movies.csv"                # caminho do CSV original
+BATCH_DIR = "batches"                  # pasta de saída para os JSONs de IDs
+MAX_IDS   = 100                        # limite seguro de IDs por lote para Lambda
+WAR_CODE  = "War"                      # gênero alvo
+
+# 1) Ler o CSV completo
+df = pd.read_csv(
+    CSV_PATH,
+    sep="|",
+    na_values="\\N",
+    dtype=str,
+    engine="python"
+)
+
+# 2) Filtrar apenas filmes de guerra e garantir IDs únicos
+war_movies = (
+    df[df["genero"].str.contains(r"(^|,)War($|,)", na=False)]
+      .drop_duplicates(subset="id")
+)
+
+imdb_ids = war_movies["id"].tolist()
+print(f"Total de filmes de guerra no CSV: {len(imdb_ids)}")
+
+# 3) Quebrar em lotes de até MAX_IDS e gravar como JSON
+os.makedirs(BATCH_DIR, exist_ok=True)
+for i in range(math.ceil(len(imdb_ids) / MAX_IDS)):
+    batch = imdb_ids[i*MAX_IDS:(i+1)*MAX_IDS]
+    with open(f"{BATCH_DIR}/ids_{i+1:03d}.json", "w", encoding="utf-8") as fp:
+        json.dump(batch, fp, ensure_ascii=False)
+print(f"Gerados {i+1} arquivos em '{BATCH_DIR}/'")
+
+```
+
+Ele foi executado da seguinte maneira:
 ```bat
 @echo off
 set FUNC=ingest-tmdb
