@@ -1,4 +1,4 @@
-# 🎬 Desafio Final – Sprint 6
+# 🎬 Desafio – Sprint 6
 
 ### Etapa 3 – Camada **Trusted** (Filmes de Guerra)
 
