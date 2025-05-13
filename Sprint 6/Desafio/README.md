@@ -205,7 +205,7 @@ job.init(args['JOB_NAME'], args)
 
 #Lê todos os JSONs da RAW
 df = (spark.read
-      .option("recursiveFileLookup", "true")   # <- NOVO!
+      .option("recursiveFileLookup", "true")   
       .json(args['RAW_JSON_PATH']))
 
 # Extrai ano/mes/dia do path do arquivo
