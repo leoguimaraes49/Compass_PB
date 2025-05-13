@@ -58,16 +58,27 @@ Para detalhes completos, consulte o [README do desafio](Desafio/README.md).
 ## 2. Evidências
 
 1. ![ ](./Evidencias/Evidencias-Exercicios/e1.png)
+
 2. ![ ](./Evidencias/Evidencias-Exercicios/e2.png)
+
 3. ![ ](./Evidencias/Evidencias-Exercicios/e3.png)
+
 4. ![ ](./Evidencias/Evidencias-Exercicios/e4.png)
+
 5. ![ ](./Evidencias/Evidencias-Exercicios/e5.png)
+
 6. ![ ](./Evidencias/Evidencias-Exercicios/e6.png)
+
 7. ![ ](./Evidencias/Evidencias-Exercicios/e7.png)
+
 8. ![ ](./Evidencias/Evidencias-Exercicios/e8.png)
+
 9. ![ ](./Evidencias/Evidencias-Exercicios/e9.png)
+
 10. ![ ](./Evidencias/Evidencias-Exercicios/e10.png)
+
 11. ![ ](./Evidencias/Evidencias-Exercicios/e11.png)
+
 12. ![ ](./Evidencias/Evidencias-Exercicios/e12.png)
 
 ## 3. AWS Glue Lab
