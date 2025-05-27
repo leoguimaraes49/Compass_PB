@@ -322,7 +322,7 @@ LIMIT  10;
 | 1 | **Qual ROI médio por década?**                    | `SELECT decada, ROUND(AVG(roi),2) FROM fact_movie_metrics JOIN dim_tempo USING (tempo_sk) GROUP BY decada ORDER BY decada;`                                                                    |
 | 2 | **Top 10 filmes por ROI**                         | `SELECT titulo_principal, roi FROM fact_movie_metrics JOIN dim_filme USING(filme_sk) ORDER BY roi DESC LIMIT 10;`                                                                              |
 | 3 | **Estúdios com maior revenue acumulado**          | `SELECT nome_estudio, SUM(revenue) FROM fact_movie_metrics f JOIN bridge_filme_estudio b USING(filme_sk) JOIN dim_estudio e USING(estudio_sk) GROUP BY nome_estudio ORDER BY 2 DESC LIMIT 10;` |
-|
+
 | 4 | **Duração média dos filmes de guerra por década** | `SELECT decada, ROUND(AVG(tempo_minutos),1) FROM fact_movie_metrics f JOIN dim_filme d USING(filme_sk) JOIN dim_tempo t USING(tempo_sk) GROUP BY decada ORDER BY decada;` |
 
 ---
