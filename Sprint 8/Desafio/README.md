@@ -111,7 +111,7 @@ Essas perguntas geram **cinco datasets** e seis visuais (um KPI extra para total
 
 *   Performance: dados em SPICE (200 ms de latência).  
 *   Interatividade: controle de filtro único “Década” impacta todos os visuais.  
-*   Exportação: PDF anexado: [Dashboard](Desafio/dashboard.pdf)
+*   Exportação: PDF anexado: [Dashboard](dashboard.pdf)
 
 ![Evidência](../Evidencias/e08.png)
 
