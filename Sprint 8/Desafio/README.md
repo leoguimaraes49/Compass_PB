@@ -78,12 +78,12 @@ Essas perguntas geram **cinco datasets** e seis visuais (um KPI extra para total
 
 #### KPIs no cabeçalho
 
-| KPI                | Campo/Fórmula             | Formato       | Cor do número |
-| ------------------ | ------------------------- | ------------- | ------------- |
-| Total de filmes    | `countDistinct(filme_sk)` | **#,##0**     | `#FFFFFF`     |
-| Investimento total | `sum(budget_milhoes)`     | **#,##0 "M"** | `#8EA8B4`     |
-| Receita total      | `sum(revenue_milhoes)`    | **#,##0 "M"** | `#205375`     |
-| ROI médio          | `avg(roi_pct)`            | **0,0 "%”**   | `#2F8F45`     |
+| KPI                | Campo/Fórmula             | 
+| ------------------ | ------------------------- | 
+| Total de filmes    | `countDistinct(filme_sk)` | 
+| Investimento total | `sum(budget_milhoes)`     | 
+| Receita total      | `sum(revenue_milhoes)`    |
+| ROI médio          | `avg(roi_pct)`            |
 
 *Todos os cartões: fundo tema escuro, altura 120 px, largura igual, comparação OFF.*
 
@@ -111,7 +111,7 @@ Essas perguntas geram **cinco datasets** e seis visuais (um KPI extra para total
 
 *   Performance: dados em SPICE (200 ms de latência).  
 *   Interatividade: controle de filtro único “Década” impacta todos os visuais.  
-*   Exportação: PDF anexado: [Dashboard](Desafio/dashborad.pdf)
+*   Exportação: PDF anexado: [Dashboard](Desafio/dashboard.pdf)
 
 ![Evidência](../Evidencias/e08.png)
 
